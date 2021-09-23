@@ -1,0 +1,137 @@
+*{
+    font-family: 'Kaushan Script', cursive;
+    transition: 0.5s ease-in-out;
+}
+
+.body-bg{
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -100;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.day-bg{
+    background-image: url("../images/HillsandMountains-day.png");
+}
+.night-bg{
+    background-image: url("../images/HillsandMountains-night.png");
+}
+.dusk-bg{
+    background-image: url("../images/HillsandMountains-sunset.png");
+}
+
+.body-fadeout{
+    opacity: 0;
+}
+
+.headline{
+    text-align: center;
+    font-size: 69px;
+    color: white;
+}
+
+.info{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.result{
+    font-size: 50px;
+    margin-bottom: 50px;
+    height: 70px;
+}
+
+#city-input, #search-input{
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+}
+#city-input{
+    padding: 9px 12px;
+}
+#search-input{
+    padding: 9px 12px 9px 10px;
+}
+#city-input:focus{
+    outline: none;
+}
+
+#search-input{
+    width: 120px;
+}
+
+.main{
+    text-align: center;
+    margin-top: 150px;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.main-night{
+    background-color: #051026d5;
+    color: white;
+}
+.main-night #search-input{
+    background-color: #365374;
+    color: white;
+}
+.main-night #city-input{
+    background-color: white;
+    color: black;
+}
+
+.main-dusk{
+    background-color: rgba(92, 0, 0, 0.726);
+    color: #fff7ca;
+}
+.main-dusk .headline{
+    color: #fff7ca;
+}
+.main-dusk #search-input{
+    background-color: #eb5216;
+    color: white;
+}
+.main-dusk #city-input{
+    background-color: #fff7ca;
+}
+
+.main-day{
+    background-color: #f5f3d9a1;
+    color: #436D8F;
+}
+.main-day .headline{
+    color: #436D8F;
+}
+.main-day #city-input{
+    background-color: #569696;
+    color: white;
+}
+.main-day #search-input{
+    background-color: #5cac56;
+    color: white;
+}
+
+@media screen and (max-width: 767px){
+    .headline{
+        font-size: 50px;
+    }
+    .info{
+        font-size: 22px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .result{
+        height: 65px;
+    }
+    
+    .main{
+        margin-top: 120px;
+    }
+}
